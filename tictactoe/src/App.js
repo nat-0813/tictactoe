@@ -1,4 +1,5 @@
 import { useState } from "react";
+//component represents board game is played on
 
 function Square({ value, onSquareClick }) {
   return (
@@ -9,6 +10,7 @@ function Square({ value, onSquareClick }) {
 }
 
 function Board({ xIsNext, squares, onPlay }) {
+  //variabl
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
       return;
